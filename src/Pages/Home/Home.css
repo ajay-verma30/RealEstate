@@ -1,0 +1,112 @@
+.top-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white !important;
+}
+
+.brand-name{
+    font-size: 5em;
+}
+
+.top-container {
+    position: relative;
+    background-image: url('../../../public/Images/background 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+.top-container-content h4{
+    color: black;
+    font-size: 5em;
+   font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.top-container-content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+
+.call_btn{
+    margin-top: 5%;
+    color: rgb(190, 190, 190);
+    background-color: rgb(29, 29, 29);
+    padding: 10px;
+}
+
+.call_btn:hover{
+    background-color: black;
+}
+
+.sub-text{
+    padding: 2%;
+    font-family: "Vend Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.custom-hr {
+  border: none;
+  height: 6px;
+  width: 60%; 
+  margin: 40px auto;
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 70%, transparent 100%);
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.social-buttons{
+  margin-top: 20px;
+}
+
+.social-icons{
+  color: rgb(49, 49, 49);
+}
+.social-icons:hover{
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+
+@media screen and (min-width: 768px) {
+   .social-icons{
+  font-size: 1em !important;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .top-container-content h4 {
+    font-size: 3em;
+  }
+  .social-icons{
+  font-size: 1em !important;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .top-container-content h4 {
+    font-size: 2em;
+  }
+  .sub-text p{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .top-container-content h4 {
+    font-size: 1.5em;
+  }
+  .sub-text p{
+    display: none;
+  }
+}
