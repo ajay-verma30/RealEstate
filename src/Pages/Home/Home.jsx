@@ -7,10 +7,19 @@ import Review from '../../component/Review/Review'
 import Container2 from '../../component/Container2/Container2'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram,faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from 'react-router-dom'
+import Navigation from '../../component/Navigation'
+import Footer from '../../component/Footer/Footer'
 
 function Home() {
+  const navigate = useNavigate();
+  const handleContact =(e)=>{
+    e.preventDefault();
+    navigate('/contact')
+  }
   return (
     <>
+    <Navigation/>
             <div className="top-container">
                                       <div className="top-container-content">
                     <Row>
@@ -19,7 +28,7 @@ function Home() {
                     <h4>
                         Find a place <br/>you will call home
                     </h4>
-                    <button className='btn-success call_btn'>Book a Call</button>
+                    <button className='btn-success call_btn' onClick={handleContact}>Book a Call</button>
                     <div className="social-buttons">
                          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className='social-icons'>
                             <FontAwesomeIcon icon={faFacebook} size="2x" />
@@ -42,6 +51,7 @@ function Home() {
             <Review/>
             <hr className="custom-hr" />
             <Container2/>
+            <Footer/>
     </>
   )
 }

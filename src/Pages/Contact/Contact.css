@@ -1,0 +1,107 @@
+.main-frame-contact{
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-page{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.custom-contact-container{
+    background-color: #24272a;
+    border-radius: 20px;
+}
+
+.custom-contact-container h2,h5{
+    color: white;
+}
+
+.custom-contact-container h5{
+    color: wheat;
+}
+
+.form-label{
+    color: white;
+    margin-top: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+   .custom-contact-container{
+    padding: 5% !important;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    .main-frame-contact{
+    width: 100vw;
+    height: 90vh;
+    }
+
+    .custom-contact-container{
+        padding: 20px !important;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+
+    .custom-contact-container h2{
+        font-size: 20px !important;
+    }
+
+    .custom-contact-container h5{
+        font-size: 15px !important;
+    }
+
+    .form-label{
+        font-size: 15px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    .main-frame-contact{
+    width: 100vw;
+    height: 110vh;
+}
+
+    .custom-contact-container{
+        padding: 20px !important;
+    }
+    .contact-page{
+        margin-top: 80px;
+    }
+    .title{
+        font-size: 1em;
+    }
+    .customFooter{
+        margin-top: 230px !important;
+    }
+
+    .custom-contact-container h2{
+        font-size: 20px !important;
+    }
+
+    .custom-contact-container h5{
+        font-size: 15px !important;
+    }
+
+    .form-label{
+        font-size: 15px;
+}
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+}
